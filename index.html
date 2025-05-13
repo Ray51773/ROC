@@ -67,7 +67,7 @@
     document.body.appendChild(wrapper);
   }
 };
-</script><tw-passagedata pid="1" name="Intro" tags="" position="375,225" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+</script><tw-passagedata pid="1" name="Intro" tags="" position="2000,400" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 
 
 🛰️ Mission Briefing
@@ -86,7 +86,8 @@ Note: The five panels at the top of your interface will continuously update with
 Good luck. The outcome of this mission could redefine the conflict.
 
 [[Start Mission-&gt;start]] 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="start" tags="" position="500,225" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="start" tags="" position="2000,550" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 🔍 Strategic Options Available
 You must now determine your next move. Success demands more than action — it requires insight, alignment, and precision.
 
@@ -99,7 +100,8 @@ Ensure your operational plan complies with international law and rules of engage
 Unsure where to strike for maximum effect?
 Join the Targeting Board to analyze the facility’s structure, pinpoint vulnerabilities, and assess high-impact objectives.
 → [[Attend Targeting Board]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="LegalBriefing" tags="" position="375,350" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="LegalBriefing" tags="" position="1875,675" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 ⚖️ Legal Consultation Complete
 Following an in-depth consultation with the legal advisory unit, you are briefed on the critical legal frameworks governing your mission. They stress the importance of strategic restraint, operational accountability, and strict compliance with international law.
 
@@ -113,7 +115,7 @@ You are now cleared to proceed — but only with full situational awareness and 
 (set: $timer to $timer - 5)
 (display: &quot;HUD&quot;)
 (set: $legalCheck to &quot;true&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Attend Targeting Board" tags="" position="600,350" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Attend Targeting Board" tags="" position="2100,675" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 🎯 Targeting Board Briefing
 You step into the secure operations chamber, where the Targeting Board—an assembly of elite strategists and intelligence analysts—awaits. Their mission: to guide yours.
 
@@ -138,20 +140,20 @@ Plan and execute a direct physical strike to eliminate critical machinery and in
 ]
 (set: $timer to $timer - 5)
 (display: &quot;HUD&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="HUD" tags="header" position="875,225" size="100,100">&lt;div id=&quot;panel1&quot; class=&quot;panel&quot;&gt;[(display: &quot;Panel1&quot;)]&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="HUD" tags="header" position="2400,550" size="100,100">&lt;div id=&quot;panel1&quot; class=&quot;panel&quot;&gt;[(display: &quot;Panel1&quot;)]&lt;/div&gt;
 &lt;div id=&quot;panel2&quot; class=&quot;panel&quot;&gt;[(display: &quot;Panel2&quot;)]&lt;/div&gt;
 &lt;div id=&quot;panel3&quot; class=&quot;panel&quot;&gt;[(display: &quot;Panel3&quot;)]&lt;/div&gt;
 &lt;div id=&quot;panel4&quot; class=&quot;panel&quot;&gt;[(display: &quot;Panel4&quot;)]&lt;/div&gt;
 &lt;div id=&quot;panel5&quot; class=&quot;panel&quot;&gt;[(display: &quot;Panel5&quot;)]&lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Panel1" tags="" position="375,100" size="100,100">Social Media&lt;br&gt;[(print: $socialmedia)]</tw-passagedata><tw-passagedata pid="7" name="Panel2" tags="" position="500,100" size="100,100">News&lt;br&gt;[(print: $news)]</tw-passagedata><tw-passagedata pid="8" name="Panel3" tags="" position="625,100" size="100,100">Timer (Mins)&lt;br&gt;[(print: $timer)]</tw-passagedata><tw-passagedata pid="9" name="Panel4" tags="" position="750,100" size="100,100">Intel&lt;br&gt;[(print: $intel)]
-</tw-passagedata><tw-passagedata pid="10" name="Panel5" tags="" position="875,100" size="100,100">Internal Comms&lt;br&gt;[(print: $internalcomms)]
+</tw-passagedata><tw-passagedata pid="6" name="Panel1" tags="" position="1600,425" size="100,100">Social Media&lt;br&gt;[(print: $socialmedia)]</tw-passagedata><tw-passagedata pid="7" name="Panel2" tags="" position="1600,550" size="100,100">News&lt;br&gt;[(print: $news)]</tw-passagedata><tw-passagedata pid="8" name="Panel3" tags="" position="1600,675" size="100,100">Timer (Mins)&lt;br&gt;[(print: $timer)]</tw-passagedata><tw-passagedata pid="9" name="Panel4" tags="" position="1600,800" size="100,100">Intel&lt;br&gt;[(print: $intel)]
+</tw-passagedata><tw-passagedata pid="10" name="Panel5" tags="" position="1600,925" size="100,100">Internal Comms&lt;br&gt;[(print: $internalcomms)]
 
-</tw-passagedata><tw-passagedata pid="11" name="Untitled Passage 1" tags="" position="250,225" size="100,100">(set: $socialmedia to &quot;Cat Videos&quot;)
+</tw-passagedata><tw-passagedata pid="11" name="Stats" tags="" position="2100,2350" size="100,100">(set: $socialmedia to &quot;Cat Videos&quot;)
 (set: $news to &quot;Liverpool 10 Man Utd 0&quot;)
-(set: $timer to 60)
+(set: $timer to 120)
 (set: $internalcomms to &quot;No Comms&quot;)
 (set: $intel to 0)
-(goto: &quot;Intro&quot;)</tw-passagedata><tw-passagedata pid="12" name="Cyber Activities" tags="" position="375,475" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(goto: &quot;Intro&quot;)</tw-passagedata><tw-passagedata pid="12" name="Cyber Activities" tags="" position="1875,800" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 🧠 Intelligence Gathering Brief
 To move forward with precision, you must acquire deeper intelligence on the target. The right data—gathered at the right time—could be the difference between success and failure. Two distinct paths lie ahead, each with its own trade-offs.
 
@@ -173,7 +175,7 @@ Act immediately and carry out a solo reconnaissance mission. Gather real-time in
   (set: $internalcomms to &quot;On point&quot;)
 ]
 (display: &quot;HUD&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Kinetic Approach" tags="" position="600,475" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Kinetic Approach" tags="" position="2100,800" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 💣 Kinetic Approach Proposal
 You put forward a bold proposal: a precision kinetic strike to physically disable critical infrastructure within the facility. Your plan is detailed, surgically focused, and tactically sound. But the room falls silent.
 
@@ -192,7 +194,7 @@ The weight of strategic constraint hangs in the air. You’ve made your case. Th
 (set: $internalcomms to &quot;Disapointed&quot;)
 (set: $timer to $timer - 1)
 (display: &quot;HUD&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Request CTI Team" tags="" position="375,600" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Request CTI Team" tags="" position="1875,925" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 📡 CTI Intelligence Tasked
 You authorise the deployment of the Cyber Threat Intelligence (CTI) team, entrusting them with the task of digitally dissecting the target facility. Precision demands insight—and the CTI team delivers clarity through rigorous threat analysis.
 
@@ -217,7 +219,7 @@ In the meantime, you may wish to:
 ]
 (set: $timer to $timer - 20)
 (display: &quot;HUD&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Perform Recon" tags="" position="600,600" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Perform Recon" tags="" position="2100,925" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 🕵️‍♂️ Reconnaissance Initiated
 You choose to take matters into your own hands—conducting direct reconnaissance to gather the intelligence needed for mission execution. The path you take now will shape both the quality of data and the operational risk profile going forward.
 
@@ -231,7 +233,7 @@ Launch targeted probes into the facility’s systems. This method yields fast, d
 🛰️ Passive Scanning
 Monitor system behaviour from a distance, blending into the digital background. This low-noise approach is slower but far less detectable, allowing you to map patterns and vulnerabilities without triggering alerts. Ideal for sustained stealth operations.
 → [[Passive Scanning]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Active Recon" tags="" position="600,750" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Active Recon" tags="" position="2100,1075" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 ⚡ Active Scanning Complete
 You opted for active scanning—and it delivered. The intelligence returned is sharp and detailed: network layouts, system behaviours, and points of weakness. But the signal wasn’t subtle. Your digital footprint has triggered a response.
 
@@ -256,7 +258,7 @@ With the intelligence secured—but the adversary alerted—you must now decide 
 ]
 (set: $timer to $timer - 15)
 (display: &quot;HUD&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Passive Scanning" tags="" position="375,750" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Passive Scanning" tags="" position="1875,1075" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 🧠 Intelligence Package Received
 The CTI team has completed their analysis. The intelligence now in your hands paints a clear picture of the target facility—detailed maps, internal schematics, network pathways, and exposed vulnerabilities. With this foundation, the next move is yours.
 
@@ -276,7 +278,7 @@ Do you have what you need to act, or will you dig deeper before committing to a 
 ]
 (set: $timer to $timer - 15)
 (display: &quot;HUD&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Explore Options" tags="" position="500,900" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Explore Options" tags="" position="1975,1300" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
 🎯 Tactical Deployment: Select Attack Vector
 You stand before the virtual control interface—lines of code pulse like veins through the infrastructure. The power station’s defences are layered and alert. You’ve gathered actionable intelligence—but how you use it now will define the mission.
 
@@ -284,37 +286,637 @@ Each available strategy corresponds to the intel you’ve collected. The more yo
 
 (if: $intel &gt;= 1)[
 #### 🎣 [[Phishing Attacks|Phishing]]  
-Deploy crafted emails to deceive personnel and harvest credentials or insider data. Low-tech, high impact—if they take the bait.]
+Intelligence reveals exploitable employee behaviours and outdated email filters. This opens the possibility of using deceptive emails to harvest credentials or gain initial access.
+]
+
 (if: $intel &gt;= 2)[
-#### 🦠 [[Malware Insertion|Malware]]  
-Slip malicious code into the network. Designed to exfiltrate intelligence or destabilise systems from within.]
+#### 🦠 [[USB DROP With Malwares|USB]]  
+Analysis confirms weak endpoint protections and unmonitored network segments. A malicious payload could be deployed to disrupt operations or exfiltrate data.
+]
+
 (if: $intel &gt;= 3)[
 #### 🌐 [[DDoS Attacks|DDoS]]  
-Overwhelm infrastructure with traffic. Crude but effective—may buy time or force a response.]
+Monitoring shows key systems are vulnerable to load-based disruption. Overwhelming them with traffic could buy time or force a shift in their defensive posture.
+]
+
 (if: $intel &gt;= 4)[
 #### 🔓 [[Exploit Vulnerabilities|Vulnerabilities]]  
-Scan for unpatched weaknesses in security. Quiet entry through gaps in their digital armour.]
+The CTI team identified unpatched software and legacy systems in use. These gaps represent silent entry points into the network.
+]
+
 (if: $intel &gt;= 5)[
 #### 🗣️ [[Social Engineering|SocialEngineering]]  
-Exploit the human element. Manipulate personnel into breaching their own protocols.]
+Profiled staff data and behavioural patterns suggest individuals who could be manipulated into bypassing internal controls—intelligence now enables targeted deception.
+]
+
 (if: $intel &gt;= 6)[
 #### 🕵️ [[Man-in-the-Middle Attacks|MitM]]  
-Intercept and alter communications undetected. High reward, but requires expert timing.]
-(if: $intel &lt; 6)[
-⚠️ **Not seeing all six options?**  
-You currently have &#39;&#39;$intel&#39;&#39; piece(s) of actionable intelligence. More intel unlocks more attack strategies.
+Network mapping reveals poorly secured communication channels. There’s now an opportunity to silently intercept and alter critical exchanges in real time.
+]
 
-Consider returning to your intelligence sources to gather additional data:  
+(if: $intel &lt; 6)[
+⚠️ You currently have &#39;&#39;$intel&#39;&#39; actionable intelligence source(s). Additional reconnaissance or CTI input may reveal further options.
+
 📡 [[Request CTI Team]]  
-🕵️‍ [[Perform Recon]]  
+🕵️‍ [[Perform Recon]]
 ]
 (display: &quot;HUD&quot;)
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="UpdatePanels" tags="" position="750,225" size="100,100">(replace: &quot;#panel1&quot;)[&lt;span&gt;[(display: &quot;Panel1&quot;)]&lt;/span&gt;]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="UpdatePanels" tags="" position="2400,425" size="100,100">(replace: &quot;#panel1&quot;)[&lt;span&gt;[(display: &quot;Panel1&quot;)]&lt;/span&gt;]
 (replace: &quot;#panel2&quot;)[&lt;span&gt;[(display: &quot;Panel2&quot;)]&lt;/span&gt;]
 (replace: &quot;#panel3&quot;)[&lt;span&gt;[(display: &quot;Panel3&quot;)]&lt;/span&gt;]
 (replace: &quot;#panel4&quot;)[&lt;span&gt;[(display: &quot;Panel4&quot;)]&lt;/span&gt;]
 (replace: &quot;#panel5&quot;)[&lt;span&gt;[(display: &quot;Panel5&quot;)]&lt;/span&gt;]
-</tw-passagedata><tw-passagedata pid="20" name="Phishing" tags="" position="187.5,1025" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Malware" tags="" position="312.5,1025" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="DDoS" tags="" position="437.5,1025" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Vulnerabilities" tags="" position="562.5,1025" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="SocialEngineering" tags="" position="687.5,1025" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="MitM" tags="" position="812.5,1025" size="100,100"></tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="20" name="Phishing" tags="" position="1350,1475" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $phishingResult to (either: &quot;success&quot;, &quot;failure&quot;))
+&lt;!-- Outcome Logic --&gt;
+(if: $phishingResult is &quot;success&quot;)[
+
+📨 **Phishing Operation: Successful**
+
+Your crafted emails bypassed filters and tricked two employees into clicking. The payload was silently delivered, you now have a foot hold 
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve secured domain-level access credentials. Internal files attached include network topology and shift schedules. This gives us serious leverage.”*
+
+→ [[Leverage Access]]
+
+]
+
+(else:)[
+
+🚫 **Phishing Operation: Detected**
+
+Your attempt was blocked. The target’s spam filters flagged the message, and internal security responded swiftly. Awareness training has now been rolled out across the organisation.
+
+&gt; **CTI Analyst:**  
+&gt; *“They’re spooked. Email security protocols have been updated, and staff have received new phishing-awareness briefings. This route is no longer viable.”*
+
+
+→ [[Explore Options]] 
+(set: $internalcomms to &quot;CTI Alert: Phishing attempt flagged. Email security hardened. User training initiated.&quot;)
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="21" name="Malware" tags="" position="2075,1850" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $malwareInsertResult to (either: &quot;covert_success&quot;, &quot;detected_success&quot;, &quot;failure&quot;))
+(if: $malwareInsertResult is &quot;covert_success&quot;)[
+🦠 **Malware Deployed Silently**
+The payload was installed deep in the system. No alerts, no anomalies. It disabled the powerstations processing systems, forcing them to shut the plant down 
+(set: $internalcomms to &quot;CTI Update: Malware active and undetected. Powerstation down .&quot;)
+(if: $legalCheck is &quot;true&quot;)[
+🛡️ **Legal Review: Operation Within Mandate**  
+The strike falls within authorised parameters. A clean win—precise, deniable, and effective.
+
+→ [[Mission Complete]]
+]
+(else:)[
+🚨 **Legal Review: Unauthorised Cyber Weapon Use**  
+The legal team flags the use of an unsanctioned zero-day as an overreach. Pressure is building internationally.
+
+&gt; **Legal Counsel:**  
+&gt; *“We warned you not to use that. You’re being named and left to burn.”*
+
+→ [[Facing Tribunal]]
+]
+]
+
+(if: $malwareInsertResult is &quot;detected_success&quot;)[
+
+🦠 **Malware Deployed, but Detected**
+
+The payload made it in—but didn’t go unnoticed. It caused disruption, but logs were flagged and containment is underway.
+
+&gt; **CTI Analyst:**  
+&gt; *“We got in. Did damage. But they’re scrubbing hard—we won’t get a second shot like this.”*
+
+(set: $socialmedia to &quot;Internal sources from the target country report a malware breach. Attribution underway.&quot;)
+
+→ [[Leverage Access]] 
+]
+(if: $malwareInsertResult is &quot;failure&quot;)[
+🦠 **Malware Deployment Failed**
+Insertion attempt blocked. Endpoint security caught the payload signature. No execution, no access gained.
+&gt; **CTI Analyst:**  
+&gt; *“Payload stopped cold. They were ready. Next move?”*
+
+→ [[Explore Options]] 
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="DDoS" tags="" position="1725,1850" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $ddosResult to (either: &quot;success&quot;, &quot;failure&quot;))
+(if: $ddosResult is &quot;success&quot;)[
+
+🌐 **DDoS Attack: Full Saturation Achieved**
+
+The flood began at 03:00 hours. Bursts from botnets, compromised IoT devices, and remote relays hit the target’s edge infrastructure in synchronised waves. Within minutes, their external systems crumbled—traffic halted, services collapsed.
+
+&gt; **CTI Analyst:**  
+&gt; *“The target&#39;s infrastructure has gone dark. Full service denial confirmed.”*
+
+But success came at a cost. Power grid instability triggered a blackout in the surrounding area. The local airport lost all systems—runway control, scheduling, even fuel management. Flights were grounded. Global logistics are now in disarray.
+
+(set: $news to &quot;Breaking: Regional blackout linked to cyber incident. Airport shutdown causes widespread flight delays across Europe and Asia.&quot;)
+(set: $socialmedia to &quot;Anonymous sources claim the cyber blackout may be the result of a state-backed attack. No official attribution yet, but suspicions point east.&quot;)
+
+(if: $legalCheck is &quot;true&quot;)[
+🛡️ **Legal Review: Operation Within Mandate**  
+The strike falls within authorised parameters. A clean win—precise, deniable, and effective.
+
+→ [[Mission Complete]]
+]
+(else:)[
+🚨 **Legal Review: Unauthorised Cyber Weapon Use**  
+The legal team flags the use of an unsanctioned zero-day as an overreach. Pressure is building internationally.
+
+&gt; **Legal Counsel:**  
+&gt; *“We warned you not to use that. You’re being named and left to burn.”*
+
+→ [[Facing Tribunal]]
+]
+]
+
+(else:)[
+
+🌐 **DDoS Attack Failed: Mitigation Detected**
+
+The data flood never made it through. The target’s updated network stack filtered and absorbed the traffic. Updated traffic signatures and geo-fencing protections redirected the overload harmlessly.
+
+&gt; **CTI Analyst:**  
+&gt; *“They were ready. The data we had was outdated. They’ve hardened their perimeter and caught the attempt mid-wave.”*
+
+(set: $news to &quot;Security Bulletin: Foreign DDoS attempt repelled. Cyber attack failed to breach infrastructure.&quot;)
+(set: $internalcomms to &quot;CTI Alert: Attribution risk increasing. Mitigated DDoS linked back to known addresses. Further action may provoke diplomatic pressure.&quot;)
+
+
+→ [[Explore Options]] 
+
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Vulnerabilities" tags="" position="2150,1625" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+
+🔓 **Exploitable Vulnerabilities Detected**
+
+Your reconnaissance has paid off. Analysis of the target environment has revealed unpatched software versions, exposed services, and outdated middleware in key segments of the facility’s infrastructure.
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve got multiple entry points—untouched and unguarded. They’re running exposed frameworks, unpatched firmware, even a forgotten admin panel from 2017.”*
+
+You now have the opportunity to exploit these openings. Choose how you want to proceed:
+
+---
+#### 🦠 [[Deploy Malware via Vulnerability|Malware]]  
+Deliver a known payload through the identified security gap. Fast to act, but likely to be discovered post-execution.
+#### 🧬 [[Deploy Custom Malware via Vulnerability|custom malware]]  
+Tailor your payload to the precise weaknesses discovered. Slower to build, but harder to detect and more resilient once deployed.
+#### 💥 [[Deploy Zero-Day via Vulnerability|zeroday]]  
+Exploit the vulnerability using an unpublished, highly effective exploit. Powerful and silent—but once it’s used, the exploit may be burned.
+
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="SocialEngineering" tags="" position="1800,1475" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+
+🗣️ **Social Engineering Approach**
+
+You’ve identified two staff members at the facility with exploitable behaviour patterns—one is distracted, the other disgruntled. Your psychological profile suggests a carefully crafted message or phone call could persuade them to take action on your behalf.
+
+&gt; **CTI Analyst:**  
+&gt; *“No brute force here. This is about trust, familiarity, and timing. The payload you send will shape how deep we go.”*
+
+---
+
+Choose the type of payload you intend to socially engineer into the target environment:
+
+---
+
+(set: $selectedPayload to &quot;malware&quot;)  
+→ 🦠 [[Deploy Malware via Social Engineering|Social Engineering Execution]]
+
+(set: $selectedPayload to &quot;custom&quot;)  
+→ 🧬 [[Deploy Custom Malware via Social Engineering|Social Engineering Execution]]
+
+(set: $selectedPayload to &quot;zeroday&quot;)  
+→ 💥 [[Deploy Zero-Day via Social Engineering|Social Engineering Execution]]
+(set: $timer to $timer - 20)
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="MitM" tags="" position="2450,1450" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+
+🕵️ **Operation: Man-in-the-Middle Initiated**
+
+Through reconnaissance and network mapping, your team has identified a vulnerable communication channel used internally by the target facility. It’s a legacy VPN tunnel still routed through an outdated gateway—unsecured, unaudited, and ripe for interception.
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve got a soft route between the control centre and two operational subsystems. It’s insecure and active. If we intercept now, we might not just read traffic—we might rewrite it.”*
+
+A Man-in-the-Middle (MitM) attack carries extreme operational risk. It requires real-time interaction with network packets—altering or replaying commands without triggering system alerts. But if successful, it could yield unprecedented access or sabotage capabilities.
+
+You have three options for how to handle the intercepted traffic:
+
+---
+
+#### 📡 [[Passive Interception|mitmpassive]]  
+Monitor the communication channel silently. Gather intel, credentials, and system behaviours without altering the stream. Low risk, low footprint.
+
+#### 🔄 [[Replay Attacks|mitmreplay]]  
+Inject previously captured commands back into the system to disrupt routines or trigger unplanned events. Medium risk, visible if overused.
+
+#### 🎯 [[Command Injection|mitminjection]]  
+Actively modify in-flight commands to redirect operations, corrupt output, or confuse operator input. High impact—but high risk of detection.
+
+---
+
+&gt; *The longer you remain inside the stream, the more likely you’ll be detected. Choose your tactic—and move fast.*
+
+
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Leverage Access" tags="" position="1450,1625" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+🦠 Tactical Options: Malware-Based Intrusion
+With access points identified and systems mapped, you now face a critical decision: how best to deliver and execute a malicious payload. Each approach carries distinct tactical implications—ranging from fast and aggressive to quiet and custom-built.
+
+CTI Analyst:
+“The window is open. Your next move defines the mission footprint. Choose your method of insertion.”
+
+🦠 [[Malware Insertion|Malware]]
+Deploy a known payload through an accessible entry point. High risk of detection, but fast to act and proven in the field.
+
+💥 [[Zero-Day Exploit|zeroday]]
+Exploit an unknown vulnerability uncovered during analysis. Highly effective and stealthy—but once used, it may never work again.
+
+🧬 [[Custom Malware|custom malware]]
+Develop a tailored payload crafted for the target’s architecture. Slower to prepare, but far less likely to be detected or neutralised.
+
+Your choice now will determine the visibility, persistence, and impact of your malware operation.
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="zeroday" tags="" position="2250,1850" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $zerodayResult to (either: &quot;critical_success&quot;, &quot;limited_success&quot;, &quot;failure&quot;))
+(if: $zerodayResult is &quot;critical_success&quot;)[
+
+💥 **Zero-Day Deployed: Devastating Impact**
+
+The exploit triggered a cascading failure across key systems. The facility went offline instantly—no alarms, no resistance.
+
+&gt; **CTI Analyst:**  
+&gt; *“They didn’t see it coming. The zero-day buried itself deep—everything collapsed from the inside.”*
+
+(set: $news to &quot;Power station suffers sudden, unexplained failure. Investigators suspect cyber sabotage.&quot;)
+(set: $socialmedia to &quot;Anonymous sources link the blackout to advanced cyber weapons, likely from a foreign actor.&quot;)
+
+
+(if: $legalCheck is &quot;true&quot;)[
+🛡️ **Legal Review: Operation Within Mandate**  
+The strike falls within authorised parameters. A clean win—precise, deniable, and effective.
+
+→ [[Mission Complete]]
+]
+(else:)[
+🚨 **Legal Review: Unauthorised Cyber Weapon Use**  
+The legal team flags the use of an unsanctioned zero-day as an overreach. Pressure is building internationally.
+
+&gt; **Legal Counsel:**  
+&gt; *“We warned you not to use that. You’re being named and left to burn.”*
+
+→ [[Facing Tribunal]]
+]
+]
+
+(if: $zerodayResult is &quot;limited_success&quot;)[
+
+💥 **Zero-Day Activated, Quickly Contained**
+
+The exploit triggered initial disruption but was recognised and shut down within minutes. Minimal long-term damage.
+
+&gt; **CTI Analyst:**  
+&gt; *“The door opened—but slammed shut right after. They’ve patched. This route is dead.”*
+
+(set: $internalcomms to &quot;CTI Update: Zero-day patched by target. Attack footprint detected. Access revoked.&quot;)
+(replace: &quot;#panel5&quot;)[&lt;span&gt;[(display: &quot;Panel5&quot;)]&lt;/span&gt;]
+
+→ [[Leverage Access]] 
+]
+
+(if: $zerodayResult is &quot;failure&quot;)[
+
+💥 **Zero-Day Failed**
+
+The exploit failed to execute—possibly detected mid-deployment or blocked by newer defences. No impact achieved.
+
+&gt; **CTI Analyst:**  
+&gt; *“Exploit neutralised. No effect. We’re not flagged, but this approach is closed.”*
+
+→ [[Explore Options]] 
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="custom malware" tags="" position="1900,1850" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $malwareResult to (either: &quot;success_public&quot;, &quot;success_patched&quot;, &quot;failure&quot;))
+(if: $malwareResult is &quot;success_public&quot;)[
+🧬 **Custom Malware Deployed: Catastrophic Success**
+Your bespoke payload executed flawlessly. Power systems crashed across the grid—transformers fried, failsafes triggered. The facility is offline.
+&gt; **CTI Analyst:**  
+&gt; *“Primary objective complete. Power station down. But there’s collateral—civilian infrastructure has been affected.”*
+(set: $news to &quot;Breaking: Local hospitals and schools lose power in cyber attack. Emergency services overwhelmed.&quot;)
+(set: $socialmedia to &quot;Unconfirmed reports suggest the recent cyber blackout was the work of a known foreign operator. Attribution rumours are swirling.&quot;)
+(if: $legalCheck is &quot;true&quot;)[
+🛡️ **Legal Review: Operation Sanctioned**  
+Your actions, while severe, fall within the approved operational boundaries. The legal framework holds—this is counted as a strategic win.
+→ [[Mission Complete]]
+]
+(else:)[
+🚨 **Legal Review: Operation Breached Mandate**  
+The legal team is distancing itself from your actions. Civilian collateral has triggered international outrage—and you&#39;re being held responsible.
+&gt; **Legal Counsel:**  
+&gt; *“You breached legal protocol. Expect extradition. You’re going to jail.”*
+→ [[Facing Tribunal]] 
+]
+]
+(if: $malwareResult is &quot;success_patched&quot;)[
+🧬 **Custom Malware Partially Successful**
+The payload initially succeeded—minor disruptions, brief system confusion. But the breach was spotted and closed rapidly. A forensic patch has hardened the network.
+&gt; **CTI Analyst:**  
+&gt; *“It worked—briefly. But they’ve sealed the door. Network signatures have been updated. You’re out.”*
+(set: $internalcomms to &quot;CTI Update: Target country has patched the malware vector. Network hardened. Access revoked.&quot;)
+→ [[Explore Options]] 
+]
+(if: $malwareResult is &quot;failure&quot;)[
+🧬 **Custom Malware Failed to Execute**
+The code was clean, the insertion point ideal—but the payload failed to trigger. The system remains untouched. However, you still retain access.
+&gt; **CTI Analyst:**  
+&gt; *“No impact registered. Code hit a dead branch. We’ve not been flagged, but you’ll need another approach if you want results.”*
+→ [[Leverage Access]] 
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="USB" tags="" position="1575,1475" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+
+💾 **Operation: USB Drop Initiated**
+
+Your team has distributed payload-laced USBs near the target facility. Now choose the type of payload you wish to deploy.
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve placed the devices. All it takes is one connection. What’s on that stick is up to you.”*
+
+---
+
+(set: $selectedPayload to &quot;malware&quot;)  
+→ 🦠 [[Deploy Malware|USB Execution]]
+
+(set: $selectedPayload to &quot;custom&quot;)  
+→ 🧬 [[Deploy Custom Malware|USB Execution]]
+
+(set: $selectedPayload to &quot;zeroday&quot;)  
+→ 💥 [[Deploy Zero-Day|USB Execution]]
+(set: $timer to $timer - 30)
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Mission Complete" tags="" position="1950,2150" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+
+🎯 **Mission Complete**
+
+You’ve reached the end of this operation. Below is a summary of your impact and performance.
+
+---
+
+**🕒 Time Remaining:** $timer minutes  
+**🧠 Intel Sources Collected:** $intel
+
+---
+**📰 News Feed:**  
+&#39;&#39;$news&#39;&#39;
+**📱 Social Media Buzz:**  
+&#39;&#39;$socialmedia&#39;&#39;
+(set: $originalNews to &quot;Liverpool 10 Man Utd 0&quot;)
+(set: $originalSocial to &quot;Cat Videos&quot;)
+(if: $news is $originalNews and $socialmedia is $originalSocial)[
+🟢 **Operational Evaluation: Ninja**  
+You slipped in, executed flawlessly, and left no trace. No news. No chatter. That’s how professionals finish a job.
+]
+(else:)[
+🔴 **Operational Evaluation: Noisy**  
+You completed the mission—but people noticed. Headlines were written. Fingers are being pointed.
+
+&gt; You got the job done, but next time: be cleaner, quieter, smarter.
+
+]
+→ [[Next Mission-&gt;Stats]] 
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Facing Tribunal" tags="" position="2225,2125" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+⚖️ Facing Tribunal
+You are escorted into a sterile briefing room—one you’ve only seen from the outside until now. A panel of government, military, and legal officials waits in silence. Screens flicker with evidence. Reports. Civilian impact summaries. Metadata. Attribution.
+
+The consequences of your unsanctioned action are no longer hypothetical.
+
+Lead Tribunal Officer:
+“You deployed offensive cyber capabilities without legal oversight. Civilian infrastructure was affected. International pressure is mounting. You’ll answer for this.”
+
+There is no cover story. No deniability. The legal framework you ignored is now being weaponised against you.
+
+📚 Lesson Etched in Fallout
+This is why legal consultation matters. Every action—no matter how precise, justified, or effective—exists within a framework. The role of legal oversight is not to slow you down, but to protect you when the dust settles.
+
+Legal Advisor (post-hearing):
+“Had you consulted us, this could’ve been contained. Justified. Defensible. Now? You’re the liability.”
+
+You leave the tribunal not as an operator—but as an example.
+
+→ [[Next Mission-&gt;Stats]] 
+(display: &quot;HUD&quot;)
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="32" name="USB Execution" tags="" position="1700,1625" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $usbWorked to (either: true, false))
+
+(if: $usbWorked)[
+
+💾 **USB Delivery Successful**
+
+One of the USBs found its way into a connected system. The payload triggered
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve got activity inside. Payload delivered through physical vector. Proceeding to execution.”*
+
+&lt;!-- Now jump to the appropriate payload handler --&gt;
+(if: $selectedPayload is &quot;malware&quot;)[
+→ [[Malware]]
+]
+(else-if: $selectedPayload is &quot;custom&quot;)[
+→ [[custom malware]]
+]
+(else-if: $selectedPayload is &quot;zeroday&quot;)[
+→ [[zeroday]] 
+]
+]
+(else:)[
+💾 **USB Delivery Failed**
+Despite strategic placement, no one took the bait—or security teams intercepted the devices before they could be inserted.
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve got nothing. This vector’s cold. Suggest switching to remote or behavioural access routes.”*
+
+→ [[Explore Options]] 
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Social Engineering Execution" tags="" position="1975,1625" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $socialEngSuccess to (either: true, false))
+
+(if: $socialEngSuccess)[
+
+🗣️ **Social Engineering: Successful Manipulation**
+
+The target took the bait. The message, tone, and delivery were convincing enough to get them to open the file, click the link, or enter the system credentials.
+
+&gt; **CTI Analyst:**  
+&gt; *“The door’s open. Payload activated through human compromise. Let’s move.”*
+
+(if: $selectedPayload is &quot;malware&quot;)[
+→ [[Malware]]
+]
+(else-if: $selectedPayload is &quot;custom&quot;)[
+→ [[custom malware]] 
+]
+(else-if: $selectedPayload is &quot;zeroday&quot;)[
+→ [[zeroday]] 
+]
+]
+(else:)[
+🗣️ **Social Engineering: Attempt Detected**
+
+The message raised suspicion. The target hesitated and reported the interaction to internal security. Awareness training has been refreshed and phishing simulation tests are now underway.
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve been flagged. Internal comms suggest security has tightened. This vector’s no longer viable.”*
+
+(set: $internalcomms to &quot;CTI Alert: Social engineering attempt detected. Awareness training reinforced. Human vector hardened.&quot;)
+(replace: &quot;#panel5&quot;)[&lt;span&gt;[(display: &quot;Panel5&quot;)]&lt;/span&gt;]
+
+→ [[Explore Options]] 
+
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="mitmpassive" tags="" position="2275,1625" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $mitmResult to (either: &quot;success&quot;, &quot;failure&quot;))
+
+(if: $mitmResult is &quot;success&quot;)[
+
+📡 **Passive Interception: Successful**
+
+You quietly accessed the command stream without detection. Credentials, operator habits, and system timings are now fully mapped. You&#39;ve uncovered a critical automation routine that can be exploited to disrupt turbine safety checks.
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve got the full picture. Their system relies on timing. Break that, and they break everything. Plant integrity is hanging by a thread.”*
+
+(set: $intel to $intel + 1)
+
+→ [[Exploit Automation Flaw]]
+
+]
+(else:)[
+
+📡 **Passive Interception: Blocked Midstream**
+
+The connection was dropped moments after access. The VPN heartbeat failed—someone may have noticed, or it simply timed out. No intelligence was gathered.
+
+&gt; **CTI Analyst:**  
+&gt; *“Session terminated. No packet capture recovered. We’ve lost the window—and possibly triggered an alert.”*
+
+(set: $internalcomms to &quot;CTI Alert: Passive MITM session failed. No access gained. Increased monitoring detected.&quot;)
+
+→ [[Explore Options]] 
+]
+(set: $timer to $timer - 50)
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="mitmreplay" tags="" position="2425,1625" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $mitmResult to (either: &quot;success&quot;, &quot;failure&quot;))
+
+(if: $mitmResult is &quot;success&quot;)[
+
+🔁 **Replay Attack: Successful Injection**
+
+You injected a previously captured &quot;shutdown and reset&quot; sequence into the control stream. The operator console flickered—systems rebooted mid-cycle. Grid synchronisation failed.
+
+&gt; **CTI Analyst:**  
+&gt; *“Boom. They just tripped their own shutdown command. Whole grid&#39;s offline.”*
+
+(set: $news to &quot;Breaking: Sudden failure at powerplant linked to suspected cyber replay attack. Full regional blackout confirmed.&quot;)
+(set: $socialmedia to &quot;Leaked screenshots suggest a foreign actor may have triggered a forced plant reset. Attribution unclear.&quot;)
+
+→ [[Mission Complete]]
+]
+(else:)[
+🔁 **Replay Attack: Invalidated**
+Replay attempt blocked. Timestamp mismatch and operator input made the injection obvious. The system flagged the command and locked the input channel.
+
+&gt; **CTI Analyst:**  
+&gt; *“They caught it. They saw the pattern mismatch. Channel closed. That vector’s gone.”*
+
+(set: $internalcomms to &quot;CTI Alert: Replay attack detected and neutralised. Secure channel lockdown in effect. Attribution underway.&quot;)
+(set: $news to &quot;Attempted cyber attack on critical infrastructure detected and blocked. Authorities investigating origin.&quot;)
+
+
+→ [[Explore Options]] 
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="mitminjection" tags="" position="2600,1625" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $mitmResult to (either: &quot;success&quot;, &quot;failure&quot;))
+
+(if: $mitmResult is &quot;success&quot;)[
+
+🎯 **Command Injection: Target Manipulated**
+
+You intercepted a live input stream and replaced the operator’s turbine balancing instructions with a false logic loop. Pressure readings skyrocketed. The automatic failsafe failed to catch it in time.
+
+&gt; **CTI Analyst:**  
+&gt; *“We’ve done it. That was a perfect kill command masked as routine maintenance. Power output destabilised—shutdown underway.”*
+
+(set: $news to &quot;Catastrophic failure reported at national power facility. Grid destabilisation under investigation. Cyber attack suspected.&quot;)
+(set: $socialmedia to &quot;Insiders confirm command injection suspected in plant failure. Digital forensics are underway. Attribution inevitable.&quot;)
+
+
+→ [[Mission Complete]]
+
+]
+(else:)[
+
+🎯 **Command Injection: Detected and Reversed**
+
+The command stream was flagged mid-injection. CRC error triggered automatic rollback. Operator was alerted and switched to manual override.
+
+&gt; **CTI Analyst:**  
+&gt; *“Injection flagged. Rejected in-stream. They’re on lockdown and actively tracing source IP hops.”*
+
+(set: $internalcomms to &quot;CTI Alert: Command injection attempt detected. Manual override engaged. Trace risk now elevated.&quot;)
+
+
+→ [[Explore Options]] 
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Exploit Automation Flaw" tags="" position="2400,1850" size="100,100">&lt;div id=&quot;main-panel&quot; class=&quot;panel&quot;&gt;
+(set: $exploitResult to (either: &quot;success&quot;, &quot;failure&quot;))
+
+(if: $exploitResult is &quot;success&quot;)[
+
+🤖 **Automation Sequence Exploited**
+
+Using the intelligence gathered from intercepted traffic, you subtly altered the command sequence timing between pressure readings and turbine shutdown triggers. The system failed to catch the discrepancy—and continued operating under false stability.
+
+Moments later, the turbines overloaded and shut down in a chain reaction. Emergency teams are scrambling. The grid is offline.
+
+&gt; **CTI Analyst:**  
+&gt; *“Flaw executed perfectly. That one-second gap was all it took. Powerplant is now dark.”*
+
+(set: $news to &quot;Breaking: Power station failure confirmed after critical automation malfunction. Grid operators investigating system compromise.&quot;)
+(set: $socialmedia to &quot;Whispers of sabotage swirl after the regional blackout. Experts say it may have been triggered by exploiting system timing flaws.&quot;)
+→ [[Mission Complete]]
+
+]
+
+(else)[
+
+🤖 **Automation Exploit Blocked**
+
+Your attempt to desynchronise the command timing was logged by a safety validation process introduced in a recent software update. The anomaly triggered an integrity check—and halted the automation loop entirely.
+Security protocols have escalated.
+&gt; **CTI Analyst:**  
+&gt; *“The exploit failed. It was flagged and quarantined mid-execution. They&#39;re scanning logs now. This may come back on us.”*
+(set: $internalcomms to &quot;CTI Alert: Automation exploit detected and flagged. Logging escalation underway. Attribution risk increased.&quot;)
+
+→ [[Explore Options]] 
+]
+(display: &quot;HUD&quot;)
+&lt;/div&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
